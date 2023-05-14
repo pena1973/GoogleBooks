@@ -4,7 +4,9 @@ import '.././styles/style.css';
 let cart = [];
 // массив книг кеш книг чтоб заново не прогружать на повторе
 let books = [];
-// массив категорий
+// массив категорий собираю динамически, 
+//этого не было в задании, просто список категорий из макета нифига не сооьветствует что там в апи лежит
+//кроме этого обнаружила книги вообще без категории и вынесла их отдельно
 let categories = [
   'Whithout category',
   // 'Architecture',
@@ -112,7 +114,7 @@ function initSlider(options) {
 let sliderOptions = {
   dots: true,
   titles: true,
-  autoplay: false,
+  autoplay: true,
   autoplayInterval: 5000
 };
 
