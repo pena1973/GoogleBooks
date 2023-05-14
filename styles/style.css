@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Open+Sans&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
+
+/* ГЛОБАЛЬНЫЕ СТИЛИ */
 body {
     margin: 0;
     background-color: #E5E5E5;
@@ -9,11 +11,13 @@ body * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
- /* нигде нет подчеркиваний убью сразу */
+
+/* нигде нет подчеркиваний ссылок убью сразу везде */
 a {
     text-decoration: none;
 }
 
+/* КЛАССЫ */
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -37,7 +41,7 @@ a {
 .header-logo {
     font-size: 24px;
     font-weight: 700;
-    line-height: 29px;    
+    line-height: 29px;
     color: rgba(28, 42, 57, 1);
 }
 
@@ -48,7 +52,7 @@ a {
     justify-content: space-between;
 }
 
-.header-nav-item.active a {    
+.header-nav-item.active a {
     font-size: 10px;
     font-weight: 900;
     line-height: 12px;
@@ -68,7 +72,7 @@ a {
     width: 120px;
     min-width: 80px;
     justify-content: space-between;
-    margin-left: 20px;    
+    margin-left: 20px;
 }
 
 .header-icons-item-count {
@@ -83,7 +87,7 @@ a {
     font-weight: 500;
     line-height: 12px;
     letter-spacing: 0em;
-    text-align: left;    
+    text-align: left;
     color: rgba(255, 255, 255, 1);
     position: relative;
     top: -13px;
@@ -94,10 +98,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;    
-    margin: 0;    
+    position: relative;
+    margin: 0;
     padding: -200px;
 }
+
 .slider-images {
     position: relative;
     height: 702px;
@@ -229,7 +234,7 @@ a {
     margin-left: 160px;
 }
 
-.catalog-menu-nav-item.active a {    
+.catalog-menu-nav-item.active a {
     font-size: 16px;
     font-weight: 700;
     line-height: 65px;
@@ -252,7 +257,7 @@ a {
 }
 
 .catalog-show {
-    position: relative;    
+    position: relative;
     width: 1000px;
     max-width: 1000px;
     /* background-color: coral; */
@@ -267,15 +272,31 @@ a {
     padding-left: 76px;
     width: 100%;
     max-width: 500px;
+    height: 327px;
+
     /* background-color: rgb(21, 67, 194); */
     align-items: center;
     margin-bottom: 75px;
 }
 
-.catalog-show-block-img {
-    height: auto;
+.catalog-show-block-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 327px;
     width: 212px;
+    background-color: rgba(92, 106, 121, 1);     
+    
 }
+
+.catalog-show-block-img {
+    /* height: 327px;
+    width: 212px; */
+    height: 325px;
+    width: 210px;
+    max-width: 210px;
+    max-height: 325px;
+   }
 
 .catalog-show-block-info {
     display: flex;
