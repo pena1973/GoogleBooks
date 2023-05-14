@@ -1,5 +1,5 @@
 import Book from '.././src/Book.js';
-// import '.././styles/style.css';
+import '.././styles/style.css';
 // корзина покупок
 let cart = [];
 // массив книг кеш книг чтоб заново не прогружать на повторе

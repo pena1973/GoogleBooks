@@ -1,6 +1,6 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-// const HtmlWebpackPlugin = require('html-webpack-plugin'); // потом
+// const HtmlWebpackPlugin = require('html-webpack-plugin'); // проект маленький книгу я итак в класс загнала нечего особо шаблонизироваь
 const path = require('node:path');
 
 module.exports = {
@@ -10,8 +10,8 @@ module.exports = {
         filename: 'main.js'
     },
     
-     mode: 'development',
-    // mode: 'production',
+      // mode: 'development',
+      mode: 'production',
       
     plugins: [
         new MiniCssExtractPlugin(),
@@ -21,7 +21,8 @@ module.exports = {
         rules: [
           {
             test: /\.css$/i,
-            use: [MiniCssExtractPlugin.loader, "css-loader"],
+             use: [MiniCssExtractPlugin.loader, "css-loader"],
+            // use: ["style-loader", "css-loader"],
           },
         ],
       },
