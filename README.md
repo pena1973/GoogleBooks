@@ -13,3 +13,5 @@ Webpack
 Для деменстрации работы необходимо сгенерировать свой ключь и подставить в строку запроса
 
 
+PrintScreen
+https://github.com/pena1973/GoogleBooks/blob/master/GoogleBooks.JPG
